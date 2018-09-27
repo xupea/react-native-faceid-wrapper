@@ -1,13 +1,13 @@
 
-# react-native-react-native-faceid-wrapper
+# react-native-faceid-wrapper
 
 ## Getting started
 
-`$ npm install react-native-react-native-faceid-wrapper --save`
+`$ npm install react-native-faceid-wrapper --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-react-native-faceid-wrapper`
+`$ react-native link react-native-faceid-wrapper`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-react-native-faceid-wrapper` and add `RNReactNativeFaceidWrapper.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-faceid-wrapper` and add `RNReactNativeFaceidWrapper.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNReactNativeFaceidWrapper.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,12 +26,12 @@
   - Add `new RNReactNativeFaceidWrapperPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-react-native-faceid-wrapper'
-  	project(':react-native-react-native-faceid-wrapper').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-react-native-faceid-wrapper/android')
+  	include ':react-native-faceid-wrapper'
+  	project(':react-native-faceid-wrapper').projectDir = new File(rootProject.projectDir, 	'../node_modules/native-faceid-wrapper/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-react-native-faceid-wrapper')
+      compile project(':react-native-faceid-wrapper')
   	```
 
 #### Windows
@@ -45,7 +45,7 @@
 
 ## Usage
 ```javascript
-import RNReactNativeFaceidWrapper from 'react-native-react-native-faceid-wrapper';
+import RNReactNativeFaceidWrapper from 'react-native-faceid-wrapper';
 
 // TODO: What to do with the module?
 RNReactNativeFaceidWrapper;
