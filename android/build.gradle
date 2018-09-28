@@ -46,5 +46,6 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'com.facebook.react:react-native:+'
     implementation(name:'idcard_ocr', ext:'aar')
+    implementation(name:'faceid_sdk', ext:'aar')
 }
   
