@@ -20,7 +20,6 @@ public class ReactNativeFaceIDWrapperModule extends ReactContextBaseJavaModule {
   private final ReactApplicationContext reactContext;
   private UserDetectConfig config;
   private String bizToken;
-  private String mSign;
 
   public ReactNativeFaceIDWrapperModule(ReactApplicationContext reactContext) {
     super(reactContext);
@@ -73,16 +72,6 @@ public class ReactNativeFaceIDWrapperModule extends ReactContextBaseJavaModule {
     this.bizToken = bizToken;
     detectPromise = promise;
     enterNextPage();
-  }
-
-  @ReactMethod
-  public void getAppSign(String apiKey, String secret, Promise promise) {
-    long currtTime = System.currentTimeMillis() / 1000;
-    long expireTime = System.currentTimeMillis() / 1000 + 60 * 60 * 24;
-    mSign = GenerateSign.appSign(apiKey, secret, currtTime, expireTime).replaceAll("[\\s*\t\n\r]", "");
-    WritableMap map = Arguments.createMap();
-    map.putString("sign", mSign);
-    promise.resolve(map);
   }
 
   private void enterNextPage(){
