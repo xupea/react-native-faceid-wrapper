@@ -5,7 +5,7 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNReactNativeFaceidWrapper : NSObject <RCTBridgeModule>
+@interface ReactNativeFaceIDWrapper : NSObject <RCTBridgeModule>
 
 @end
   
