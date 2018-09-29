@@ -1,0 +1,47 @@
+/* 
+  MGFaceDetection.strings
+  MGFaceDetection
+
+  Created by 张英堂 on 15/12/23.
+  Copyright © 2015年 megvii. All rights reserved.
+*/
+
+//  Key
+"key_space_mark"            =           "";
+"key_success"               =           "成功";
+"key_failure"               =           "失败";
+"key_cancel"                =           "返回";
+"key_retry"                =           "重试";
+
+//  标题
+"title_idcard_detect"                   =           "身份证识别服务";
+"title_start_detect"                    =           "开始拍摄";
+"title_idcard_detect_failure"                     =           "拍摄失败";
+"title_idcard_detect_success"                     =           "拍摄成功";
+"title_idcard_detect_exit"                     =           "退出拍摄";
+"title_idcard_remind_info"                 =           "即将进行身份证人像面和国徽面的扫描拍摄";
+"title_idcard_remind_portrait_info"                 =           "即将进行身份证人像面的扫描拍摄";
+"title_idcard_remind_emblem_info"                 =           "即将进行身份证国徽面的扫描拍摄";
+"title_idcard_identify"                 =           "识别中...";
+"title_idcard_agreement"                 =           "《FaceID用户协议》";
+"title_idcard_user_agreement"                 =           "我已阅读并同意 《FaceID用户协议》";
+"title_idcard_agreement_title"                 =           "FaceID用户协议";
+
+//  提醒
+"remind_idcard_front_detect"                     =           "人像面拍摄";
+"remind_please_idcard_front_inbound"                    =           "请将身份证头像面放在线框内";
+"remind_idcard_back_detect"                     =           "国徽面拍摄";
+"remind_please_idcard_back_inbound"                     =           "请将身份证国徽面放在线框内";
+"remind_idcard_orc_detect_failed"                     =           "身份证信息识别失败。\n是否重新开始检测？";
+
+"remind_idcard_quality_failed_1"                     =           "未检测到身份证";
+"remind_idcard_quality_failed_2"                     =           "请将身份证边缘对齐引导框";
+"remind_idcard_quality_failed_3"                     =           "请保持光线充足，且不出现反光";
+"remind_idcard_quality_failed_4"                     =           "请调整拍摄位置，以去除光斑";
+"remind_idcard_quality_failed_5"                     =           "请调整拍摄位置，以去除阴影";
+"remind_idcard_quality_failed_6"                     =           "请将身份证人像面放在框内";
+"remind_idcard_quality_failed_7"                     =           "请将身份证国徽面放在框内";
+"remind_idcard_quality_failed_8"                     =           "";
+
+"remind_idcard_detect_failure_remind"                     =           "拍摄时请将身份证放入框内，请注意拍摄角度及光线，并确保身份证两面文字清晰";
+"remind_idcard_shooting_emblem_side"                     =           "即将拍摄国徽面";

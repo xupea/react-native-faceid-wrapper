@@ -8,24 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* ReactNativeFaceIDWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* ReactNativeFaceIDWrapper.m */; };
+		D050CCF8215F61040095B789 /* MGFaceIDBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D050CCF5215F61010095B789 /* MGFaceIDBaseKit.framework */; };
+		D050CCF9215F61040095B789 /* MGFaceIDZZIDCardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D050CCF6215F61030095B789 /* MGFaceIDZZIDCardKit.framework */; };
+		D050CCFA215F61040095B789 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D050CCF7215F61040095B789 /* Masonry.framework */; };
+		D0CB7C37215E475300FA14FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CB7C36215E475300FA14FC /* AVFoundation.framework */; };
+		D0CB7C39215E476400FA14FC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CB7C38215E476400FA14FC /* CoreMedia.framework */; };
+		D0CB7C3F215E497400FA14FC /* MGFaceIDZZIDCardResouce.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0CB7C3C215E47E400FA14FC /* MGFaceIDZZIDCardResouce.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+		58B511D91A9E6C8500147676 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNReactNativeFaceIDWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReactNativeFaceIDWrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		134814201AA4EA6300B7C361 /* libReactNativeFaceIDWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeFaceIDWrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* ReactNativeFaceIDWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeFaceIDWrapper.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* ReactNativeFaceIDWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeFaceIDWrapper.m; sourceTree = "<group>"; };
+		D050CCF5215F61010095B789 /* MGFaceIDBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGFaceIDBaseKit.framework; sourceTree = "<group>"; };
+		D050CCF6215F61030095B789 /* MGFaceIDZZIDCardKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGFaceIDZZIDCardKit.framework; sourceTree = "<group>"; };
+		D050CCF7215F61040095B789 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+		D0CB7C36215E475300FA14FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D0CB7C38215E476400FA14FC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D0CB7C3C215E47E400FA14FC /* MGFaceIDZZIDCardResouce.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MGFaceIDZZIDCardResouce.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D050CCF9215F61040095B789 /* MGFaceIDZZIDCardKit.framework in Frameworks */,
+				D050CCF8215F61040095B789 /* MGFaceIDBaseKit.framework in Frameworks */,
+				D050CCFA215F61040095B789 /* Masonry.framework in Frameworks */,
+				D0CB7C39215E476400FA14FC /* CoreMedia.framework in Frameworks */,
+				D0CB7C37215E475300FA14FC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +60,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNReactNativeFaceIDWrapper.a */,
+				134814201AA4EA6300B7C361 /* libReactNativeFaceIDWrapper.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,30 +68,53 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				D050CCF7215F61040095B789 /* Masonry.framework */,
+				D050CCF5215F61010095B789 /* MGFaceIDBaseKit.framework */,
+				D050CCF6215F61030095B789 /* MGFaceIDZZIDCardKit.framework */,
+				D0CB7C3A215E479B00FA14FC /* resource */,
 				B3E7B5881CC2AC0600A0062D /* ReactNativeFaceIDWrapper.h */,
 				B3E7B5891CC2AC0600A0062D /* ReactNativeFaceIDWrapper.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				D0CB7C35215E475300FA14FC /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		D0CB7C35215E475300FA14FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB7C38215E476400FA14FC /* CoreMedia.framework */,
+				D0CB7C36215E475300FA14FC /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0CB7C3A215E479B00FA14FC /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB7C3C215E47E400FA14FC /* MGFaceIDZZIDCardResouce.bundle */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* ReactNativeFaceidWrapper */ = {
+		58B511DA1A9E6C8500147676 /* ReactNativeFaceIDWrapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ReactNativeFaceidWrapper" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ReactNativeFaceIDWrapper" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
-				58B511D91A9E6C8500147676 /* CopyFiles */,
+				58B511D91A9E6C8500147676 /* Copy Files */,
+				D0CB7C3E215E496E00FA14FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ReactNativeFaceidWrapper;
+			name = ReactNativeFaceIDWrapper;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNReactNativeFaceIDWrapper.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libReactNativeFaceIDWrapper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -82,6 +123,9 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -102,10 +146,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* ReactNativeFaceidWrapper */,
+				58B511DA1A9E6C8500147676 /* ReactNativeFaceIDWrapper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0CB7C3E215E496E00FA14FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CB7C3F215E497400FA14FC /* MGFaceIDZZIDCardResouce.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -166,6 +221,11 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -226,6 +286,11 @@
 		D0CB7BF4215E422400FA14FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -251,7 +316,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ReactNativeFaceidWrapper" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ReactNativeFaceIDWrapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

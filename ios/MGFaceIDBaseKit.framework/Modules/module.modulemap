@@ -1,0 +1,6 @@
+framework module MGFaceIDBaseKit {
+  umbrella header "MGFaceIDBaseKit.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module MGFaceIDZZIDCardKit {
+  umbrella header "MGFaceIDZZIDCardKit.h"
+
+  export *
+  module * { export * }
+}
